@@ -24,19 +24,19 @@ export default {
 
 <template>
 	<section
-		class="flex flex-col sm:justify-between items-center sm:flex-row mt-12 sm:mt-10"
+		class="flex flex-col items-center mt-12 sm:justify-between sm:flex-row sm:mt-10"
 	>
 		<!-- Banner left contents -->
-		<div class="w-full md:w-1/3 text-left">
+		<div class="w-full text-left md:w-1/3">
 			<h1
-				class="font-general-semibold text-3xl md:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
+				class="text-3xl text-center uppercase font-general-semibold md:text-3xl xl:text-4xl sm:text-left text-ternary-dark dark:text-primary-light"
 			>
 				안녕하세요, 이지호입니다.
 			</h1>
 			<p
-				class="font-general-medium mt-2 text-lg sm:text-xl  xl:text-2xl text-center sm:text-left leading-none text-gray-400"
+				class="mt-2 text-lg leading-none text-center text-gray-400 font-general-medium sm:text-xl xl:text-2xl sm:text-left"
 			>
-				A Full-Stack Developer & Design Enthusiast
+				Back-End Developer & Server Engineer
 			</p>
 			<div class="flex justify-center sm:block">
 				<a
@@ -47,10 +47,10 @@ export default {
 				>
 					<i
 						data-feather="arrow-down-circle"
-						class="ml-0 sm:ml-1 mr-2 sm:mr-3 w-5 sm:w-6 duration-100"
+						class="w-5 ml-0 mr-2 duration-100 sm:ml-1 sm:mr-3 sm:w-6"
 					></i>
 					<span
-						class="text-sm sm:text-lg font-general-medium duration-100"
+						class="text-sm duration-100 sm:text-lg font-general-medium"
 						>Download CV</span
 					></a
 				>
@@ -58,7 +58,7 @@ export default {
 		</div>
 
 		<!-- Banner right illustration -->
-		<div class="w-full md:w-2/3 text-right float-right">
+		<div class="float-right w-full text-right md:w-2/3">
 			<img
 				v-if="theme === 'light'"
 				src="@/assets/images/developer.svg"
